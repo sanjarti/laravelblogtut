@@ -117,6 +117,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+//    Verwijderd Post op basis van ID
     public function destroy($id)
     {
         $post  = Post::find($id);
