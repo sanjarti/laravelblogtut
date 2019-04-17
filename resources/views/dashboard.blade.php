@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h3>Your Blog Posts</h3>
+                        <a href="/posts/create" class="btn btn-primary">Create post</a>
                 </div>
             </div>
         </div>
