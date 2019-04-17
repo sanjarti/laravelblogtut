@@ -36,4 +36,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //hasMany geeft hier aan dat het een '1 op veel' relatie betreft.
+    public function posts(){
+        return $this->hasMany('App\Post');
+    }
 }

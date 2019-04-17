@@ -12,6 +12,9 @@
             {{--CK editor toegevoeg in array binnen textarea--}}
             {{form::textarea('body', '', [ 'id' => 'article-ckeditor','class' => 'form-control', 'placeholder' => 'Body Text'])}}
         </div>
+        <div class="form-group">
+            {{form::file('cover_image')}}
+        </div>
     {{form::submit('Submit', ['class'=> 'btn btn-primary'])}}
     {!! Form::close() !!}
 @endsection
