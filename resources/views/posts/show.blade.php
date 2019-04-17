@@ -3,7 +3,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div>
+    <div style="margin: 20px">
         <a href="/posts" class="btn btn-primary">Go back</a>
     </div>
     &nbsp;

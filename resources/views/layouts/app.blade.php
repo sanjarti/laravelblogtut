@@ -34,7 +34,7 @@
     CKEDITOR.replace( 'article-ckeditor' );
 </script>
 <script src="{{ asset('js/app.js') }}"></script>
-
+p
 </body>
 
 </html>

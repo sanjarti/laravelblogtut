@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>{{$title}}</h3>
-    <hr>
+    <h3 style="margin: 30px">{{$title}}</h3>
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="card p-3">
