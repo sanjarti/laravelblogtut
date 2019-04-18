@@ -4,9 +4,9 @@
     <h3 style="margin: 30px">{{$title}}</h3>
     @if(count($posts) > 0)
         @foreach($posts as $post)
-            <div class="card p-3">
+            <div class="card p-3" style="margin-bottom: 5px">
                 <h3><a href="posts\{{$post->id}}">{{$post->title}}</a></h3>
-                <small>Written on {{$post->created_at}}</small>
+                <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
             </div>
         @endforeach
     @else

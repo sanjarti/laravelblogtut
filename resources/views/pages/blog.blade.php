@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>Posts</h3>
+    <h3 style="margin: 30px">Posts</h3>
     <hr>
     @if(count($posts) > 0)
         @foreach($posts as $post)

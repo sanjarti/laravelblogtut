@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lsapp.iml" filepath="$PROJECT_DIR$/.idea/lsapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Larablog.iml" filepath="$PROJECT_DIR$/.idea/Larablog.iml" />
     </modules>
   </component>
 </project>
