@@ -6,7 +6,6 @@
 
         <div class="jumbotron text-center" style="margin-top: 15px">
 
-
 {{--            Wordt geladen als gebr is ingelogd--}}
             @guest
 
@@ -15,8 +14,8 @@
                     <a class="btn btn-success btn-lg" href="{{ route('register') }}" >{{ __('Register') }}</a>
                 @endif
                 @else
-                <h1>Welcome Jan Sarti!</h1>
-                <p>Write a blog</p>
+                <h1>Welcome to your Larablog account</h1>
+                <h3>{{ Auth::user()->name }} </h3>
             @endguest
         </div>
 

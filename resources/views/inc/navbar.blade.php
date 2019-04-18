@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-laravel">
+<nav class="navbar navbar-expand-md bg-dark navbar-laravel" style="margin-bottom: 15px">
     <div class="container">
+{{--        Navbar title--}}
         <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Laravel') }}
+            <h4>Larablog</h4>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +26,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/posts/create">Create Post</a></li>
+{{--                    <li class="nav-item"><a class="nav-link" href="/posts/create">Create Post</a></li>--}}
                 </ul>
 
             <!-- Right Side Of Navbar -->

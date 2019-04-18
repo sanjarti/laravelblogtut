@@ -7,7 +7,6 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
@@ -18,23 +17,22 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 </head>
-
 <body>
 <div>
-        <div class="container">
-            @include('inc.navbar')
-            @include('inc.messages')
-            @yield('content')
-        </div>
-</div>
+    @include('inc.navbar')
 
-<!-- Scripts -->
-<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'article-ckeditor' );
-</script>
-<script src="{{ asset('js/app.js') }}"></script>
-p
+    <div class="container">
+        @include('inc.messages')
+        @yield('content')
+    </div>
+
+    <div>
+        <!-- Scripts -->
+        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace( 'article-ckeditor' );
+        </script>
+        <script src="{{ asset('js/app.js') }}"></script>
+    </div>
 </body>
-
 </html>
